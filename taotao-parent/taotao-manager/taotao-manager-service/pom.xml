@@ -19,6 +19,12 @@
   	</dependency>
   	
   	<dependency>
+  		<groupId>com.taotao</groupId>
+  		<artifactId>taotao-manger-interface</artifactId>
+  		<version>${taotao.version}</version>
+  	</dependency>
+  	
+  	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>servlet-api</artifactId>
   	</dependency>
