@@ -13,8 +13,19 @@
   <dependencies>
   
   	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  	</dependency>
+  
+  
+  	<dependency>
   		<groupId>com.taotao</groupId>
   		<artifactId>taotao-common</artifactId>
+  		<version>${taotao.version}</version>
+  	</dependency>
+	<dependency>
+  		<groupId>com.taotao</groupId>
+  		<artifactId>taotao-manager-interface</artifactId>
   		<version>${taotao.version}</version>
   	</dependency>
   
@@ -48,7 +59,29 @@
 		<artifactId>spring-context-support</artifactId>
 	</dependency>
   
-  
+  	<!-- dubbo相关的jar包 -->
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>dubbo</artifactId>
+		<exclusions>
+			<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>org.jboss.netty</groupId>
+				<artifactId>netty</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.zookeeper</groupId>
+		<artifactId>zookeeper</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>com.github.sgroschupf</groupId>
+		<artifactId>zkclient</artifactId>
+	</dependency>
   
   
   	<dependency>
@@ -60,10 +93,31 @@
   		<groupId>javax.servlet</groupId>
 		<artifactId>servlet-api</artifactId>
   	</dependency>
+  	
+  	<!-- 需要在业务中加入该依赖，不然会警告：因为没有找到page对象的序列化和反序列化过程is unknown class in ..... -->
+  	<dependency>
+		<groupId>com.github.pagehelper</groupId>
+		<artifactId>pagehelper</artifactId>
+	</dependency>
+	
+	
+	<dependency>
+	    <groupId>cn.bestwu</groupId>
+	    <artifactId>fastdfs-client-java</artifactId>
+	    <version>1.27</version>
+	</dependency>
+	
+	
+	<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+	</dependency>
+	
+  	
   </dependencies>
   
   
-  
+
   
   
   

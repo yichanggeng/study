@@ -10,7 +10,7 @@
   <name>服务层</name>
   <modules>
   	<module>taotao-manager-dao</module>
-  	<module>taotao-manger-interface</module>
+  	<module>taotao-manager-interface</module>
   	<module>taotao-manager-service</module>
   	<module>taotao-manager-pojo</module>
   </modules>

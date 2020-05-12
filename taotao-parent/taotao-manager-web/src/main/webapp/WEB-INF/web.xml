@@ -40,7 +40,7 @@
  
  <servlet-mapping>
  	<servlet-name>taotao-manager-web</servlet-name>
-	<url-pattern>/*</url-pattern>
+	<url-pattern>/</url-pattern>
  </servlet-mapping>
  
  
